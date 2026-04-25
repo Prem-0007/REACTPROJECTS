@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(164, 188, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}.wrapper{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.accordian{
+    width: 500px;
+  
+}
+.item{
+    background-color: rgb(22, 19, 23);
+    margin-bottom: auto;
+    margin-top: 10px;
+
+}
+.item:last-child{
+    border-bottom: none;
+}
+.content{
+    padding: 15px;
+     color:rgb(109, 90, 65);
+    height: auto;
+}
+.title{
+    padding: 15px;
+    color:rgb(251, 255, 5);
+  
+    font-weight: 500;
+    cursor: pointer;
+}
