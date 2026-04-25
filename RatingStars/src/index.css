@@ -1,0 +1,14 @@
+body{
+   background-color: rgb(157, 205, 247);
+}.star-rate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ cursor: pointer;
+}.active{
+  color:#fff700;
+}
+.inactive{
+  color:#000000;
+}
