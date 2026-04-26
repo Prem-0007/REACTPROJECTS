@@ -1,0 +1,69 @@
+body{
+  background-color: #202020;
+}.to-do-list{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top:100px;
+}
+h1{
+  font-size: 4rem;
+  color:white;
+}
+button{
+  font-size: 1.5rem;
+  color:white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor:pointer;
+  border:none;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color: green;
+}
+.add-button:hover{
+  background-color: rgb(4, 221, 4);;
+}
+.delete-btn{
+  background-color: rgb(255, 0, 0);
+}
+.delete-btn:hover{
+  background-color: rgb(191, 1, 1);
+}
+.move-btn{
+  background-color: rgb(0, 174, 255);
+}
+.move-btn:hover{
+  background-color: rgb(8, 69, 103);
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border:2px solid rgb(96, 96, 96);
+  color:rgba(0, 0, 0, 0.49);
+  border-radius: 5px;
+}
+ol{
+  padding:0;
+}
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(217, 237, 255);
+}
+.text{
+  flex:1;
+}
+.delete-btn, .move-btn
+{
+  padding: 8px 12px;
+  margin-left: 10px;
+  font-size: 1.4rem;
+}
