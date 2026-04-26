@@ -66,7 +66,7 @@ export default function ImageSlider({ url }) {
           onClick={nextSlide}
         />
 
-   
+    
         <div className="dots-container">
           {image.map((_, index) => (
             <span

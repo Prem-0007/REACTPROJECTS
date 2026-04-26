@@ -31,7 +31,7 @@ function isCaseNode(node) {
 
 /**
  * Checks if a given node appears as the value of a PropertyDefinition node.
- * @param {ASTNode} node THe node to check.
+ * @param {ASTNode} node The node to check.
  * @returns {boolean} `true` if the node is a PropertyDefinition value,
  *      false if not.
  */
@@ -504,7 +504,7 @@ function processCodePathToEnter(analyzer, node) {
 
 		case "SwitchCase":
 			/*
-			 * Fork if this node is after the 2st node in `cases`.
+			 * Fork if this node is after the 1st node in `cases`.
 			 * It's similar to `else` blocks.
 			 * The next `test` node is processed in this path.
 			 */
@@ -626,8 +626,11 @@ function processCodePathToExit(analyzer, node) {
 		case "ImportExpression":
 		case "MemberExpression":
 		case "NewExpression":
-		case "YieldExpression":
 			state.makeFirstThrowablePathInTryBlock();
+			break;
+
+		case "YieldExpression":
+			state.makeYield();
 			break;
 
 		case "WhileStatement":
